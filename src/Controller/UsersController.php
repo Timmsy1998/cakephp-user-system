@@ -44,8 +44,8 @@ class UsersController extends AppController
         // regardless of POST or GET, if user is logged in then redirect them to their dashboard
         if ($result->isValid()) {
             $target = $this->Authentication->getLoginRedirect() ?? '/users/dashboard';
-            $userEntity = $this->Users->get($this->Auth->user('id'));
-            $userEntity->last_login = new \DateTime();
+            $user = $result->getData();
+            $user->last_login = new \DateTime();
             return $this->redirect($target);
         }
         // deal with failed login attempts
