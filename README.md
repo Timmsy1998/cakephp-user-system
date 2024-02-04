@@ -10,7 +10,7 @@
 
 ## Routes
 
-```http
+```
   /users/dashboard
   /users/login
   /users/logout
