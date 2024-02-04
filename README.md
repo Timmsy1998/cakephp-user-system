@@ -4,13 +4,17 @@
 
 # CakePHP Showcase Project - User System 👋
 
-## Project Information
-
-## 🛠 Stack
+## Stack
 ![CakePHP](https://img.shields.io/badge/CakePHP-FF2D20?style=for-the-badge&logo=cakephp&logoColor=white)
 ![Symfony](https://img.shields.io/badge/SQLite-005C84?style=for-the-badge&logo=sqlite&logoColor=white)
 
+## Routes
 
-
+```http
+  /users/dashboard
+  /users/login
+  /users/logout
+  /users/add
+```
 
 
